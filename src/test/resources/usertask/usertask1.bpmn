@@ -39,14 +39,14 @@
           <omgdc:Bounds height="32.0" width="32.0" x="0.0" y="0.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNEdge bpmnElement="_6" id="BPMNEdge__6" sourceElement="_2" targetElement="直接领导审批">
+      <bpmndi:BPMNEdge bpmnElement="_6" id="BPMNEdge__6" sourceElement="_2" targetElement="_3">
         <omgdi:waypoint x="532.0" y="336.0"/>
         <omgdi:waypoint x="645.0" y="337.5"/>
         <bpmndi:BPMNLabel>
           <omgdc:Bounds height="0.0" width="0.0" x="0.0" y="0.0"/>
         </bpmndi:BPMNLabel>
       </bpmndi:BPMNEdge>
-      <bpmndi:BPMNEdge bpmnElement="_7" id="BPMNEdge__7" sourceElement="直接领导审批" targetElement="_4">
+      <bpmndi:BPMNEdge bpmnElement="_7" id="BPMNEdge__7" sourceElement="_3" targetElement="_4">
         <omgdi:waypoint x="730.0" y="337.5"/>
         <omgdi:waypoint x="850.0" y="337.5"/>
         <bpmndi:BPMNLabel>

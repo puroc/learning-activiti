@@ -52,6 +52,7 @@ public class UserTaskTestcase1 extends TestcaseParent {
 
         //启动流程
         ProcessInstance pi = runtimeService.startProcessInstanceByKey("usertask1",variables);
+
         TaskService taskService = processEngine.getTaskService();
 
         Assert.assertFalse(taskService.createTaskQuery().taskCandidateUser("zhangsan").list().isEmpty());

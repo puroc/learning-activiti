@@ -7,6 +7,7 @@ import org.junit.Assert;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.HashMap;
+import java.util.Map;
 
 
 public class TestcaseParent {
@@ -80,15 +81,15 @@ public class TestcaseParent {
     }
 
     public void tearDown() throws Exception {
-//        for (Map.Entry<String, User> entry : userMap.entrySet()) {
-//            if (!identityService.createUserQuery().userId(entry.getValue().getId()).list().isEmpty()) {
-//                identityService.deleteUser(entry.getValue().getId());
-//            }
-//        }
-//        for (Map.Entry<String, Group> entry : groupMap.entrySet()) {
-//            if (!identityService.createGroupQuery().groupId(entry.getValue().getId()).list().isEmpty()) {
-//                identityService.deleteGroup(entry.getValue().getId());
-//            }
-//        }
+        for (Map.Entry<String, User> entry : userMap.entrySet()) {
+            if (!identityService.createUserQuery().userId(entry.getValue().getId()).list().isEmpty()) {
+                identityService.deleteUser(entry.getValue().getId());
+            }
+        }
+        for (Map.Entry<String, Group> entry : groupMap.entrySet()) {
+            if (!identityService.createGroupQuery().groupId(entry.getValue().getId()).list().isEmpty()) {
+                identityService.deleteGroup(entry.getValue().getId());
+            }
+        }
     }
 }
